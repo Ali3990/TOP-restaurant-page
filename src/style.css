@@ -1,9 +1,5 @@
-img {
-    padding: 10px;
-}
-
-/* nav {
+#content {
     display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-} */
+    justify-content: center;
+    align-items: center;
+}
