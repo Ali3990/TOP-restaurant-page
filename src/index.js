@@ -1,9 +1,6 @@
-import hotpotImg from './img/wushu_hotpot.png';
+import { createHomeTab } from './pages/home.js';
+import { scheduleHours } from './pages/home.js';
+import './style.css';
 
-const img = document.createElement('img');
-img.src = hotpotImg;
-img.atl = 'hotpot pic';
-
-document.querySelector('#content').appendChild(img);
-
+createHomeTab();
 
