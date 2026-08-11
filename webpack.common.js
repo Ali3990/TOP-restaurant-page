@@ -9,7 +9,7 @@ export default {
   entry: './src/index.js',   // starting file webpack follows imports from, to build the bundle
   output: {
     path: path.resolve(__dirname, 'dist'), // output dir must be an absolute path
-    clean: true,                          // wipe dist before each build so old bundles don't pile up
+    // clean: true,                          // wipe dist before each build so old bundles don't pile up
   },
 
   plugins: [
