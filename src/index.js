@@ -9,6 +9,8 @@ createHomeTab();
 const tabs = {
     home: createHomeTab,
     menu: createMenuTab,
+    // rsvp: createRsvpTab,
+    // contact: createContactTab,
 };
 
 

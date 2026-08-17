@@ -16,6 +16,5 @@ export function createHomeTab(){
     schedule.classList.add('schedule-hours');
     document.querySelector('#content').appendChild(schedule);
 
-    
 };
 
