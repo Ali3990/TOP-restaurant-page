@@ -5,13 +5,13 @@ import tofuImg from '../img/golden_bell_tofu.png';
 import beefImg from '../img/iron_palm_beef.png'
 
 export function createMenuTab(){
-    const menuItems = document.createElement("div");
-    menuItems.classList.add("menu");
-    document.querySelector('#content').appendChild(menuItems);
+    const menu = document.createElement("div");
+    menu.classList.add("menu");
+    document.querySelector('#content').appendChild(menu);
 
     // Dish item pictures and descriptions.
     const beefItem = document.createElement("div");
-    beefItem.classList.add("beef-item")
+    beefItem.classList.add("menu-item")
     const beef = document.createElement("img");
     beef.src = beefImg;
     beef.alt = "Iron Palm Beef";
@@ -21,7 +21,7 @@ export function createMenuTab(){
     beefItem.append(beefText)
 
     const shrimpItem = document.createElement("div");
-    shrimpItem.classList.add("shrimp-item")
+    shrimpItem.classList.add("menu-item")
     const shrimp = document.createElement("img");
     shrimp.src = shrimpImg;
     shrimp.alt = "Dragon Fist Shrimp";
@@ -31,7 +31,7 @@ export function createMenuTab(){
     shrimpItem.append(shrimpText)
 
     const fishItem = document.createElement("div");
-    fishItem.classList.add("fish-item")
+    fishItem.classList.add("menu-item")
     const fish = document.createElement("img");
     fish.src = fishImg;
     fish.alt = "Eight Trigram Fish";
@@ -41,7 +41,7 @@ export function createMenuTab(){
     fishItem.append(fishText)
 
     const lambItem = document.createElement("div");
-    lambItem.classList.add("lamb-item")
+    lambItem.classList.add("menu-item")
     const lamb = document.createElement("img");
     lamb.src = lambImg;
     lamb.alt = "Flying Dagger Lamb";
@@ -51,7 +51,7 @@ export function createMenuTab(){
     lambItem.append(lambText)
 
     const tofuItem = document.createElement("div");
-    tofuItem.classList.add("tofu-item")
+    tofuItem.classList.add("menu-item")
     const tofu = document.createElement("img");
     tofu.src = tofuImg;
     tofu.alt = "Golden Bell Tofu";
@@ -60,11 +60,10 @@ export function createMenuTab(){
     tofuItem.append(tofu);
     tofuItem.append(tofuText)
 
-    // append all dishes to menuItems
-    menuItems.append(beefItem);
-    menuItems.append(shrimpItem);
-    menuItems.append(fishItem);
-    menuItems.append(lambItem);
-    menuItems.append(tofuItem)
-
+    // append all dishes to menu
+    menu.append(beefItem);
+    menu.append(shrimpItem);
+    menu.append(fishItem);
+    menu.append(lambItem);
+    menu.append(tofuItem)
 };

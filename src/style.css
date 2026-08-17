@@ -10,12 +10,23 @@ h3 {
     justify-content: center;
 }
 
+button {
+    font-size: 1.2rem;
+    font-style:initial;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 12px;
+    width: 240px;
+}
+
 nav {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
+/* content page for generating tabs */
 #content {
     display: flex;
     flex-direction: column;
@@ -26,21 +37,28 @@ nav {
 
 img {
     margin: 0;
-    border: 2px solid rgb(44, 44, 44);
+    border: 2px solid rgb(255, 255, 255);
 }
 
+/* home tab */ 
 .schedule-hours {
     color: white;
     font-size: 1.5rem;
 }
 
-button {
-    font-size: 1.2rem;
-    font-style:initial;
-    background-color: black;
-    color: white;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 12px;
-    width: 240px;
+
+
+/* menu tab */
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.2rem;
 }
 
+.menu-item p {
+    font-size: 1.4rem;
+    color:aliceblue;
+    padding: 1.2rem;
+}
