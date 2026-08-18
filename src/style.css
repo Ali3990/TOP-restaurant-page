@@ -62,3 +62,17 @@ img {
     color:aliceblue;
     padding: 1.2rem;
 }
+
+
+/* rsvp tab */
+h2 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+
+/* form tab */
+form {
+    font-size: 1.5rem;
+    color: white;
+}
