@@ -3,7 +3,7 @@ body {
     background-color: rgb(103, 26, 26);
 }
 
-h3 {
+h1 {
     color: white;
     font-size: 2rem;
     display: flex;
@@ -65,14 +65,27 @@ img {
 
 
 /* rsvp tab */
-h2 {
-    font-size: 3.5rem;
+.rsvp-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    font-size: 1.6rem;
     color: white;
 }
 
+label {
+    text-align: end;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
 
-/* form tab */
-form {
-    font-size: 1.5rem;
+input {
+    margin: 5px;
+}
+
+/* contact tab */
+.address {
     color: white;
+    margin-top: 1.1rem;
+    font-size: 1.5rem;
 }

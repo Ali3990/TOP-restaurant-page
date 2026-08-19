@@ -1,6 +1,7 @@
 import { createHomeTab } from './pages/home.js';
 import { createMenuTab} from './pages/menu.js';
 import { createRsvpTab } from './pages/rsvp.js';
+import { createContactTab } from './pages/contact.js';
 
 import './style.css';
 
@@ -11,7 +12,7 @@ const tabs = {
     home: createHomeTab,
     menu: createMenuTab,
     rsvp: createRsvpTab,
-    // contact: createContactTab,
+    contact: createContactTab,
 };
 
 

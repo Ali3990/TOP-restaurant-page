@@ -1,11 +1,12 @@
 export function createRsvpTab() {
+    const header = document.createElement("h1");
+    header.innerHTML = "Reserve a table";
+    document.querySelector("#content").append(header);
+   
+    // main form for all fields to append to.
     const rsvpForm = document.createElement("form");
     rsvpForm.classList.add("rsvp-form")
     document.querySelector("#content").append(rsvpForm);
-
-    const header = document.createElement("h2");
-    header.innerHTML = "Reserve a table";
-    rsvpForm.append(header)
 
     // .htmlFor and .id are linked.
     const nameLabel = document.createElement("label");
@@ -60,7 +61,16 @@ export function createRsvpTab() {
     phoneLabel.htmlFor = "rsvp-phone";
     const phoneInput = document.createElement("input");
     phoneInput.type = "tel";
-    phoneInput.id = "rsvp-tphone";
+    phoneInput.id = "rsvp-phone";
     rsvpForm.append(phoneLabel);
     rsvpForm.append(phoneInput);
+
+    const detailsLabel = document.createElement("label");
+    detailsLabel.textContent = "Additional details: ";
+    detailsLabel.htmlFor = "rsvp-details";
+    const detailsInput = document.createElement("input");
+    detailsInput.type = "tel";
+    detailsInput.id = "rsvp-details";
+    rsvpForm.append(detailsLabel);
+    rsvpForm.append(detailsInput);
 };
