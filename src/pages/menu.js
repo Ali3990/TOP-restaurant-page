@@ -1,6 +1,6 @@
 import shrimpImg from '../img/dragon_fist_shrimp.png';
 import fishImg from '../img/eight_trigram_fish.png';
-import lambImg from '../img/flying_dagger_lamb.png';
+import lambImg from '../img/flying_dagger_lamb.jpg';
 import tofuImg from '../img/golden_bell_tofu.png';
 import beefImg from '../img/iron_palm_beef.png'
 
